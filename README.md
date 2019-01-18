@@ -1,2 +1,2 @@
 # parkandrest-kotlin
-Back end application for parking system management
+Source code coming soon
