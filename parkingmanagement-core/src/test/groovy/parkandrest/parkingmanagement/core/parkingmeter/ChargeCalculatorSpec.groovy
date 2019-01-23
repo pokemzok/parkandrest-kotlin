@@ -1,6 +1,8 @@
 package parkandrest.parkingmanagement.core.parkingmeter
 
-
+import parkandrest.parkingmanagement.core.monetary.Currency
+import parkandrest.parkingmanagement.core.monetary.Monetary
+import parkandrest.timemanagement.SystemTimeManager
 import spock.lang.Specification
 import parkandrest.parkingmanagement.api.tariff.TarifficationRuleIsMissingException
 import parkandrest.parkingmanagement.core.parking.account.CalculatedCharge
@@ -100,7 +102,7 @@ class ChargeCalculatorSpec extends Specification {
                 EntitiesStubFactory.recursiveVipTarifficationRule(tariff)
         )
         and:
-        mockedRepository.save(_ as CalculatedCharge) >> new CalculatedCharge()
+        mockedRepository.save(_ as CalculatedCharge) >>  new CalculatedCharge(vehicle, new Monetary(BigDecimal.ZERO, Currency.PLN), tariff, SystemTimeManager.systemDateTime)
         and:
         vehicle.leaveParking()
         when:
@@ -119,7 +121,7 @@ class ChargeCalculatorSpec extends Specification {
                 EntitiesStubFactory.recursiveRegularTarifficationRule(tariff)
         )
         and:
-        mockedRepository.save(_ as CalculatedCharge) >> new CalculatedCharge()
+        mockedRepository.save(_ as CalculatedCharge) >> new CalculatedCharge(vehicle, new Monetary(BigDecimal.ZERO, Currency.PLN), tariff, SystemTimeManager.systemDateTime)
         and:
         vehicle.leaveParking()
         when:
