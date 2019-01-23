@@ -1,6 +1,6 @@
 # parkandrest-kotlin
 Backend application made in spring-boot 2 and kotlin for educational purposes. All application features description is available in client application [parkandrest-ui](https://github.com/pokemzok/parkandrest-ui#application-features). 
-Currently fully tested with windows 10. Application consists of three microservices:  
+Application is fully tested on windows 10. Application consists of three microservices:  
 * Parkingmanagement - handles all parking related activities
 * Security - handles users management and Oauth 2.0 authorization.
 * Timemanagement - handles time manipulation (should be deployed only for development or testing purposes).
@@ -45,7 +45,7 @@ Application uses docker containers. To delete the containers run docker/docker-d
 Then you should manually install and configure [PostgreSQL](https://www.postgresql.org) and [RabbitMQ](https://www.rabbitmq.com). 
 
 # Flyway
-Appplication uses flyway to track sql scripts versions. To migrate database run run/migrate.bat.
+Appplication uses flyway to maintain database state. To migrate database run run/migrate.bat.
  
 # Project structure
 * database - flyway migrations for database state management
@@ -97,7 +97,7 @@ Appplication uses flyway to track sql scripts versions. To migrate database run 
 
 # What is planed in future:
 * add logging (ELK stack)
-* add service discovery
+* add service discovery and api-gateway
 * db per microservice 
 * swagger docs
 * pom refactor (make child poms self sustaining)
