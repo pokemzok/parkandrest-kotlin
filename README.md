@@ -27,20 +27,20 @@ You should not encounter any errors during any of those steps.
 ## First run
 1. Make sure docker is running
 2. Share your local drives in docker (necessary for rabbitMQ container)
-3. Run docker/docker-up.bat
-4. Run docker/docker-rabbit-config.bat
-5. Run run/build.bat
-6. Create parkandrest database (connect to postgresql database and run run/create-db.sql script)
-7. Run run/init-db.bat 
-8. Run run/dev-deploy.bat  
+3. Run [docker-up.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/docker/docker-up.bat)
+4. Run [docker-rabbit-config.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/docker/docker-rabbit-config.bat)
+5. Run [build.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/run/build.bat)
+6. Create parkandrest database (connect to postgresql database and execute [create-db.sql](https://github.com/pokemzok/parkandrest-kotlin/blob/master/run/create-db.sql) )
+7. Run [init-db.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/run/init-db.bat)
+8. Run [dev-deploy.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/run/dev-deploy.bat) 
 ## Regular run
 1. Make sure that docker is running
 2. Make sure that all three containers are running
-2. Run run/build.bat
-3. Run run/dev-deploy.bat  
+2. Run [build.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/run/build.bat)
+3. Run [dev-deploy.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/run/dev-deploy.bat)   
 
 # Docker
-Application uses docker containers. To delete the containers run docker/docker-down.bat.
+Application uses docker containers. To delete the containers run [docker-down.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/docker/docker-down.bat).
 
 # What if I don't like docker?
 Then you should manually install and configure [PostgreSQL](https://www.postgresql.org) and [RabbitMQ](https://www.rabbitmq.com). 
