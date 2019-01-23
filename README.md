@@ -44,7 +44,7 @@ Application uses docker containers. To delete the containers run docker/docker-d
 # What if I don't like docker?
 Then you should manually install and configure [PostgreSQL](https://www.postgresql.org) and [RabbitMQ](https://www.rabbitmq.com). 
 
-#Flyway
+# Flyway
 Appplication uses flyway to track sql scripts versions. To migrate database run run/migrate.bat.
  
 # Project structure
