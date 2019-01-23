@@ -26,7 +26,7 @@ Application is fully tested on windows 10. Application consists of three microse
 You should not encounter any errors during any of those steps. 
 ## First run
 1. Make sure docker is running
-2. Share your local drives with docker (necessary for rabbitMQ container)
+2. Share your local drives in docker (necessary for rabbitMQ container)
 3. Run docker/docker-up.bat
 4. Run docker/docker-rabbit-config.bat
 5. Run run/build.bat
