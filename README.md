@@ -88,7 +88,7 @@ Appplication uses flyway to maintain database state. To migrate database run [mi
 | host:8081/timemanagement/time/restore                       | Restores system time to current value. Should only be available during development.  | None                       |
 
 # How to test
- Get the client application available [here](https://github.com/pokemzok/parkandrest-ui) and then just run it simultaneously with this application.
+ Get the client application [here](https://github.com/pokemzok/parkandrest-ui) and then just run it simultaneously with this application.
  
 # Code statistics
 | Language      | Total Lines   | Source Code Lines | Source Code Lines [%] | Comment Lines | Comment Lines [%] | Blank Lines | Blank Lines [%] |
