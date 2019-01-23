@@ -1,0 +1,32 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:9.4.1
+    ports:
+    - 5432:5432
+    restart: always
+    environment:
+    - POSTGRES_USER=postgres
+    - POSTGRES_PASSWORD=postgres
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+    - 6081:6081
+
+  rabbit:
+    environment:
+    - RABBITMQ_ERLANG_COOKIE='secret_cookie'
+    image: rabbitmq:3-management
+    ports:
+    - 15672:15672
+    - 5672:5672
+    volumes:
+    - rabbit:/var/lib/rabbitmq
+    - ./conf/:/etc/rabbitmq/
+    command:  bash -c "sleep 10; rabbitmq-server;"
+
+volumes:
+  rabbit:
+    driver: local

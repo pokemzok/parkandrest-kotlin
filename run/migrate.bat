@@ -1,0 +1,1 @@
+mvn flyway:migrate -f ../database/pom.xml
