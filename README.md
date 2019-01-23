@@ -26,12 +26,13 @@ Application is fully tested on windows 10. Application consists of three microse
 You should not encounter any errors during any of those steps. 
 ## First run
 1. Make sure docker is running
-2. Run docker/docker-up.bat
-3. Run docker/docker-rabbit-config.bat
-4. Run run/build.bat
-5. Create parkandrest database (connect to postgresql database and run run/create-db.sql script)
-6. Run run/init-db.bat 
-7. Run run/dev-deploy.bat  
+2. Share your local drives with docker (necessary for rabbitMQ container)
+3. Run docker/docker-up.bat
+4. Run docker/docker-rabbit-config.bat
+5. Run run/build.bat
+6. Create parkandrest database (connect to postgresql database and run run/create-db.sql script)
+7. Run run/init-db.bat 
+8. Run run/dev-deploy.bat  
 ## Regular run
 1. Make sure that docker is running
 2. Make sure that all three containers are running
