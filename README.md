@@ -30,7 +30,7 @@ You should not encounter any errors during any of those steps.
 3. Run docker/docker-rabbit-config.bat.
 4. Run run/build.bat
 5. Create parkandrest database (connect to postgresql database and run run/create-db.sql script)
-6. Run run/init-db.bat (necessary only during the first run)
+6. Run run/init-db.bat 
 7. Run run/dev-deploy.bat  
 ## Regular run
 1. Make sure that docker is running.
