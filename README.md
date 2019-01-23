@@ -46,7 +46,7 @@ Application uses docker containers. To delete the containers run docker/docker-d
 Then you should manually install and configure [PostgreSQL](https://www.postgresql.org) and [RabbitMQ](https://www.rabbitmq.com). 
 
 # Flyway
-Appplication uses flyway to maintain database state. To migrate database run run/migrate.bat.
+Appplication uses flyway to maintain database state. To migrate database run [migrate.bat](https://github.com/pokemzok/parkandrest-kotlin/blob/master/run/migrate.bat).
  
 # Project structure
 * database - flyway migrations for database state management
