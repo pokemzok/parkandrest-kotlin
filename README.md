@@ -25,16 +25,16 @@ Currently fully tested with windows 10. Application consists of three microservi
 # How to run
 You should not encounter any errors during any of those steps. 
 ## First run
-1. Make sure docker is running.
-2. Run docker/docker-up.bat. 
-3. Run docker/docker-rabbit-config.bat.
+1. Make sure docker is running
+2. Run docker/docker-up.bat
+3. Run docker/docker-rabbit-config.bat
 4. Run run/build.bat
 5. Create parkandrest database (connect to postgresql database and run run/create-db.sql script)
 6. Run run/init-db.bat 
 7. Run run/dev-deploy.bat  
 ## Regular run
-1. Make sure that docker is running.
-2. Make sure that all three containers are running.
+1. Make sure that docker is running
+2. Make sure that all three containers are running
 2. Run run/build.bat
 3. Run run/dev-deploy.bat  
 
