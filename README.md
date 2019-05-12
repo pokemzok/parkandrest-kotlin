@@ -1,4 +1,4 @@
-# parkandrest-kotlin
+# parkandrest-kotlin  [![Build Status](https://dev.azure.com/pokemzok/pokemzok/_apis/build/status/pokemzok.parkandrest-kotlin?branchName=master)](https://dev.azure.com/pokemzok/pokemzok/_build/latest?definitionId=11&branchName=master)
 Backend application made in spring-boot 2 and kotlin for educational purposes. All application features description is available in client application [parkandrest-ui](https://github.com/pokemzok/parkandrest-ui#application-features). 
 Application is fully tested on windows 10. Application consists of three microservices:  
 * Parkingmanagement - handles all parking related activities
